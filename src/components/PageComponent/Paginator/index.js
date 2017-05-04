@@ -7,7 +7,7 @@ class Paginator extends Component {
   state = {
     pageSize: 15,
     page: 1,
-    total: this.props.total
+    total: 811
   }
 
   fnPrevClick = () => {

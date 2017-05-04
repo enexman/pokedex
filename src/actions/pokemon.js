@@ -2,7 +2,7 @@ import { types } from '../constants'
 import jquery from 'jquery'
 
 const API_URL = 'http://pokeapi.co/api/v2/'
-  // ?limit=20&offset=20
+
 export function loadPokemons () {
   const settings = {
     url: `${API_URL}pokemon/?limit=999`,
