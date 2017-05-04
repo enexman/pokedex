@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 590px;
+  min-width: 300px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #E9EDF1;
+  padding: 0 25px;
+  box-shadow: black 0 0 20px 0;
+  box-sizing: border-box;
+}

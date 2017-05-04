@@ -1,0 +1,60 @@
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+// hay frand, play with these vars.
+$loader-style: double;
+$loader-width: 0.5em;
+$loader-color: #cbd4de;
+$loader-size: 150px;
+$loader-speed: 1s;
+
+$body-bg: #e74c3c;
+
+// colors by http://flatuicolors.com/
+
+
+.loader {
+  width: 1em;
+  height: 1em;
+  font-size: $loader-size;
+  position: relative;
+  @media (max-width: $loader-size * 1.5), (max-height: $loader-size * 1.5) {
+    font-size: $loader-size/2;
+  }
+  &:before, &:after {
+    content: "";
+    top: 0;
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-width: $loader-width;
+    border-style: $loader-style;
+    border-color: transparent;
+    box-sizing: border-box;
+    border-radius: 1em;
+    animation: spin $loader-speed infinite;
+  }
+  &:after {
+    left: 0;
+    border-left-color: $loader-color;
+  }
+  &:before {
+    right: 0;
+    border-right-color: $loader-color;
+    animation-delay: $loader-speed/-4;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+}

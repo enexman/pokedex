@@ -1,0 +1,44 @@
+.pokeItem {
+  padding: 7px;
+  //border-bottom: 1px solid #507299;
+  text-align: center;
+  transition: all 0.4s;
+  text-transform: uppercase;
+
+  &:nth-child(odd) {
+    background-color: #9eafc3;
+
+    & a {
+      color: white;
+    }
+
+    &:hover {
+      background-color: #f7faff;
+      & a {
+        color: black;
+      }
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: #bfcbd8;
+
+    & a {
+      color: white;
+    }
+
+    &:hover {
+      background-color: #f7faff;
+      & a {
+        color: black;
+      }
+    }
+  }
+
+  & a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+
+}

@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 10px;
+  transition: all 0.4s;
+
+  &__wrap {
+
+  }
+
+  &__page {
+
+  }
+
+  &__btn {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+    color: black;
+    background: transparent;
+    transition: all 0.4s;
+    //border: 1px solid rgba(255, 255, 255, 0.5);
+
+    &:hover {
+      background: #6888AD;
+      color: white;
+      cursor: pointer;
+    }
+
+    &:active {
+
+    }
+  }
+
+  &__select {
+    padding: 4px 0;
+    outline: none;
+    background-color: #E9EDF1;
+  }
+
+  &__option {
+    background-color: #E9EDF1;
+  }
+}

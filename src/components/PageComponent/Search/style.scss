@@ -1,0 +1,20 @@
+.search {
+  padding-top: 20px;
+
+  &__input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px;
+    border: none;
+    outline: none;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    color: #e4e3ed;
+
+    &:focus {
+      text-transform: uppercase;
+      color: blue;
+      box-shadow: silver 0 0 20px 0;
+    }
+  }
+}
