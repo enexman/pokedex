@@ -1,4 +1,4 @@
-# RR-template 0.2.0
+# PokeDex
 
 #### Start project
 ```
@@ -11,3 +11,8 @@
 ```
   npm run build
 ```
+### ---
+```
+  http://fatfutor-3.esy.es/
+```
+
